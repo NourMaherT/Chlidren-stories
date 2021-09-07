@@ -107,3 +107,26 @@ a {
     font-size: 1.2rem;
   }
 }
+
+/* Lists */
+.list {
+  list-style: none;
+  color: var(--color-heading);
+  padding-left: 0;
+}
+.list-inline .list-item {
+  display: inline-block;
+  margin-left: 2rem;
+}
+.list-tick {
+  list-style-image: url(../images/tick.svg);
+  margin-left: 4rem;
+}
+.list-tick .list-item {
+  margin-left: 0.5rem;
+}
+@media screen and (min-width: 720px) {
+  .list-tick .list-item {
+    margin-left: 0;
+  }
+}
