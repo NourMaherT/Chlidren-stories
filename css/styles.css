@@ -5,6 +5,11 @@
   --color-heading: #8d2d00;
   --color-body: #a08f7c;
 }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
 /* Typography */
 
@@ -145,4 +150,59 @@ a {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  display: inline-block;
+}
+
+/* Buttons */
+
+.btn {
+  border-radius: 40px;
+  border: 0;
+  cursor: pointer;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 1rem 0;
+  padding: 2rem 3rem;
+  text-align: center;
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+.btn-primary {
+  background: var(--color-primary);
+  color: white;
+}
+.btn-primary:hover {
+  background: #fd631b;
+}
+.btn-secondary {
+  background: var(--color-secondary);
+  color: white;
+}
+.btn-secondary:hover {
+  background: #fc9221;
+}
+.btn-accent {
+  background: var(--color-accent);
+  color: white;
+}
+.btn-accent:hover {
+  background: #363b72;
+}
+.btn-block {
+  width: 100%;
+  display: inline-block;
+}
+.btn-outline {
+  background: white;
+  color: var(--color-heading);
+  border: 3px solid var(--color-heading);
+}
+.btn-outline:hover {
+  background: var(--color-heading);
+  color: white;
+}
+@media screen and (min-width: 720px) {
+  .btn {
+    font-size: 1.4rem;
+  }
 }
