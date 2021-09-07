@@ -163,9 +163,12 @@ a {
   font-weight: 600;
   margin: 1rem 0;
   padding: 2rem 3rem;
-  text-align: center;
+  /* text-align: center; */
   text-transform: capitalize;
   white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .btn-primary {
   background: var(--color-primary);
@@ -201,8 +204,45 @@ a {
   background: var(--color-heading);
   color: white;
 }
+.btn .icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 0.5rem;
+}
 @media screen and (min-width: 720px) {
   .btn {
+    font-size: 1.4rem;
+  }
+}
+
+/* Inputs */
+
+.input {
+  outline: 0;
+  padding: 1.5rem 3.5rem;
+  border: 2px solid #ccc;
+  border-radius: 30px;
+  font-size: 2rem;
+  color: var(--color-heading);
+}
+::placeholder {
+  color: lightgray;
+}
+.input-group {
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  display: flex;
+}
+.input-group .input {
+  flex-grow: 1;
+  border: 0;
+  padding: 1rem 1.5rem;
+}
+.input-group .btn {
+  margin: 4px;
+}
+@media screen and (min-width: 720px) {
+  .input {
     font-size: 1.4rem;
   }
 }
