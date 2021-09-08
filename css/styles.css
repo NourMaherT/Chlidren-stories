@@ -44,7 +44,7 @@ p {
   margin-top: 0;
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 768px) {
   body {
     font-size: 1.8rem;
   }
@@ -79,7 +79,7 @@ a {
 .link-arrow:hover::after {
   margin-left: 10px;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 768px) {
   .link-arrow {
     font-size: 1.5rem;
   }
@@ -105,7 +105,7 @@ a {
   background: var(--color-secondary);
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 768px) {
   .badge {
     font-size: 1.5rem;
   }
@@ -131,7 +131,7 @@ a {
 .list-tick .list-item {
   margin-left: 0.5rem;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 768px) {
   .list-tick .list-item {
     margin-left: 0;
   }
@@ -141,6 +141,10 @@ a {
 .icon {
   width: 40px;
   height: 40px;
+}
+.icon-small {
+  width: 30px;
+  height: 30px;
 }
 .icon--primary {
   fill: var(--color-primary);
@@ -153,7 +157,6 @@ a {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  display: inline-block;
 }
 
 /* Buttons */
@@ -212,7 +215,7 @@ a {
   height: 20px;
   margin-right: 0.5rem;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 768px) {
   .btn {
     font-size: 1.4rem;
   }
@@ -244,7 +247,7 @@ a {
 .input-group .btn {
   margin: 4px;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 768px) {
   .input {
     font-size: 1.4rem;
   }
@@ -382,7 +385,7 @@ a {
   position: relative;
   bottom: 10px;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 768px) {
   .quote {
     font-size: 2rem;
   }
@@ -392,4 +395,29 @@ a {
   .quote__company {
     font-size: 1.6rem;
   }
+}
+/* grids */
+.grid {
+  display: grid;
+}
+@media screen and (min-width: 768px) {
+  .grid--1x2 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Testimonial */
+.testimonial {
+  padding: 3rem;
+}
+.testimonial__image > img {
+  width: 100%;
+}
+.testimonial__image {
+  position: relative;
+}
+.testimonial__image .icon-container {
+  position: absolute;
+  right: -32px;
+  top: 3rem;
 }
