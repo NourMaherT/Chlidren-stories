@@ -8,7 +8,6 @@
 - 🤔 [How To Use](#how-to-use)
 - 🚀 [Technologies](#technologies)
 - 🌱 [Minimal Requirements](#minimal-requirements)
-- 🎇 [On Progress](#features-progress)
 - 💡 [How To Contribute](#how-to-contribute)
 - 🤗 [Contributors](#contributors)
 - 👤 [Author](#author)
