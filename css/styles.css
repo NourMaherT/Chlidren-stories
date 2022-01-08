@@ -1,3 +1,4 @@
+@import "./normalize.css";
 :root {
   --color-primary: #fc5404;
   --color-secondary: #f98404;
@@ -70,7 +71,7 @@ a {
   color: var(--color-accent);
   font-size: 2rem;
   font-weight: bold;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 .link-arrow::after {
   content: "-->";
@@ -175,7 +176,7 @@ a {
   font-weight: 600;
   margin: 1rem 0;
   outline: 0;
-  padding: 2rem 3rem;
+  padding: 2rem 3vw;
   text-align: center;
   text-transform: capitalize;
   white-space: nowrap;
@@ -259,6 +260,7 @@ a {
   flex-grow: 1;
   border: 0;
   padding: 1rem 3rem;
+  width: 0;
 }
 .input-group .btn {
   margin: 4px;
@@ -443,6 +445,7 @@ a {
 /* Testimonial */
 .testimonial {
   padding: 3rem;
+  margin-bottom: 8rem;
 }
 .testimonial__image > img {
   width: 100%;
@@ -460,6 +463,8 @@ a {
 .callout {
   padding: 4rem;
   border-radius: 5px;
+  margin: -2rem auto;
+  width: 40%;
 }
 .callout--primary {
   background: var(--color-primary);
@@ -516,6 +521,9 @@ a {
   opacity: 0;
   transition: all 0.3s;
 }
+.collapsible__content .important {
+  color: var(--color-primary);
+}
 
 .collapsible--expanded .collapsible__chevron {
   transform: rotate(0);
@@ -551,7 +559,7 @@ a {
 }
 
 .block--skewed-right {
-  padding-bottom: calc(var(--padding-vertical) + 4rem);
+  padding-bottom: calc(var(--padding-vertical) + 20rem);
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
 }
 
@@ -590,7 +598,7 @@ a {
   border-bottom: 1px solid #222;
 }
 .nav__item > a {
-  color: #444;
+  color: rgb(175, 175, 175);
   transition: color 0.15s;
 }
 .nav__item > a:hover {
@@ -641,7 +649,7 @@ a {
 }
 .block-domain__prices {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 6rem);
   font-size: 2rem;
   font-weight: 600;
@@ -694,10 +702,12 @@ a {
 @media screen and (min-width: 768px) {
   .block-showcase .grid {
     grid-template-columns: 50% 50%;
+    justify-items: center;
+    align-items: center;
   }
 
   .block-showcase__image {
-    justify-self: end;
+    justify-self: center;
   }
 
   .block-showcase__image > img {
@@ -707,6 +717,8 @@ a {
 }
 /* footer */
 .footer {
+  z-index: -1;
+  position: relative;
   background: #232323;
 }
 .footer a {
@@ -732,7 +744,7 @@ a {
   text-align: center;
 }
 .footer__brand > img {
-  width: 100%;
+  width: 30%;
   max-width: 230px;
 }
 .footer__copyright {

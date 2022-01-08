@@ -4,19 +4,371 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="A small website that describe who Nour Taha is .">
+    <meta name="author" content="Nour Taha">
+    <meta name="keywords" content="resume,web developer,seo,A test website ">
+    <meta property="og:title" content="World wide Children Stories">
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="A Children Stories website trailor.">
+    <!-- TODO: replace the urls with real ones -->
+    <meta property="og:image" content="https://news-portal-0.000webhostapp.com/images/my_logo.png">
+    <meta property="og:url" content="https://news-portal-0.000webhostapp.com">
+    <title>WW Children Stories</title>
+    <link rel="icon" href="images/fairytale24.png">
+
     <!-- fonts links -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">   
     <!-- css links -->
-    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- icons links -->
     <script src="https://kit.fontawesome.com/d631549b15.js" crossorigin="anonymous"></script>
 
 <body>
-   
-      
+   <header>
+    <nav class="nav collapsible">
+        <a href="/"><img aria-label="logo" src="images/fairytale32.png" alt="logo"></a>
+        <svg class="icon icon--white nav__toggler">
+            <use xlink:href="images/sprite.svg#menu"></use>
+          </svg>
+        <ul class="list nav__list collapsible__content">
+            <li class="nav__item"><a href="#">Discover</a></li>
+            <li class="nav__item"><a href="#">Category</a></li>
+            <li class="nav__item"><a href="#">More Services</a></li>
+            <li class="nav__item"><a href="#">About</a></li>
+        </ul>
+    </nav>
+   </header>
+      <section class="block block--dark block--skewed-left hero">
+        <div class="container grid grid--1x2">
+            <div class="block__header hero__content">
+                <h1 class="block__heading">World Wide Children Stories</h1>
+                <p class="hero__tagline">Children stories from diffrent cultures.</p>
+                <a href="#" class="btn btn--accent btn--streched">Start</a>
+            </div>
+            <picture>
+                <source type="image/png" srcset="images/fantasy.png 1x,images/fantasy.png 2x">
+                <img class="hero__image" src="images/fantasy.png" alt="">
+            </picture>
+        </div>
+    </section>
+    <section class="block container block-domain">
+        <header class="block__header">
+            <h3>Starting at $2 for the first story</h3>
+            <p>For every genre the firdt story will be $2 only</p>
+        </header>
+        <div class="input-group">
+            <input aria-label="story" class="input" type="text" placeholder="Enter the story name...">
+            <button class="btn btn--accent ">
+                <svg class="icon icon--white">
+                    <use xlink:href="images/sprite.svg#search"></use>
+                  </svg>
+            Search</button>
+        </div>
+        <ul class="list block-domain__prices">
+            <li><span class="badge badge--primary">Poetry 6$</span></li>
+            <li>Fable 7$</li>
+            <li>Fairytale 8$</li>
+            <li>Myth 9$</li>
+            <li>Folktale 10$ </li>
+            <li>Legend 11$</li>
+        </ul>
+    </section>
+    <section class="bolck container block-plan">
+        <div class="grid grid--1x3">
+            <div class="plan">
+                <div class="card card--secondary">
+                  <header class="card__header">
+                    <h3 class="plan__name">Draw story</h3>
+                    <span class="plan__price">$50</span>
+                    <span class="plan__billing-cycle">/story</span>
+                    <span class="badge badge--secondary badge--small">20% OFF</span>
+                    <span class="plan__description">Illustrate the story you want</span>
+                  </header>
+                  <div class="card__body">
+                    <ul class="list list--tick">
+                      <li class="list__item">Any genre you like</li>
+                      <li class="list__item">Up to 10 characters</li>
+                      <li class="list__item">PDF or Paper or Video</li>
+                      <li class="list__item">Animate up to two characters</li>
+                    </ul>
+                    <button class="btn btn--outline btn--block">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+              <div class="plan plan--popular">
+                <div class="card card--primary">
+                  <header class="card__header">
+                    <h3 class="plan__name">Write story</h3>
+                    <span class="plan__price">$19</span>
+                    <span class="plan__billing-cycle">/story</span>
+                    <span class="badge badge--secondary badge--small">15% OFF</span>
+                    <span class="plan__description">We write you the story you like</span>
+                  </header>
+                  <div class="card__body">
+                    <ul class="list list--tick">
+                      <li class="list__item">Any genre you like</li>
+                      <li class="list__item">Up to 50 pages</li>
+                      <li class="list__item">PDF or Paper</li>
+                      <li class="list__item">Up to 10 characters</li>
+                    </ul>
+                    <button class="btn btn--outline btn--block">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+              <div class="plan plan">
+                <div class="card card--secondary">
+                  <header class="card__header">
+                    <h3 class="plan__name">Voice Story</h3>
+                    <span class="plan__price">$14</span>
+                    <span class="plan__billing-cycle">/Story</span>
+                    <span class="badge badge--secondary badge--small">10% OFF</span>
+                    <span class="plan__description">Choose any story you want.</span>
+                  </header>
+                  <div class="card__body">
+                    <ul class="list list--tick">
+                      <li class="list__item">One day untill its ready</li>
+                      <li class="list__item">Choose the voice actor</li>
+                      <li class="list__item">Background sounds effect</li>
+                      <li class="list__item">Record story up to 5 minutes</li>
+                    </ul>
+                    <button class="btn btn--outline btn--block">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </section>    
+    <section class="block container">
+        <header class="block__header">
+            <h2>Children and Stories</h2>
+            <p>Do they bond well?</p>
+        </header>
+        <article class="grid grid--1x2 feature">
+            <div class="feature__content">
+             <span class="icon-container">
+                 <svg class="icon icon--primary">
+                     <use xlink:href="images/sprite.svg#line"></use>
+                   </svg>
+             </span>        
+                <h3 class="feature__heading">Stories make children nicer.</h3>
+                <p>It gets even more surprising when you look at the effects of reading fiction to children on their social behaviour.Scientists have found that children who have fiction read to them regularly find it easier to understand other people they show more empathy and have better developed theory of mind (the ability to understand that other people have different thoughts and feelings to us, which is essential for understanding and predicting other peoples thoughts and behaviour).</p>
+                <a class="link-arrow" href="#">Learn more</a>
+            </div>
+            <picture data-aos="fade-left">
+                <!-- <source type="image/webp" srcset="images/nicer.webp 1x, images/nicer@2x.webp 2x"> -->
+                <source type="image/png" srcset="images/nicer@1x.png 1x, images/nicer@2x.png 2x , images/nicer@3x.png 3x">
+                <img class="feature__image" src="images/nicer.png" alt="">
+            </picture>
+        </article>
+        <article class="grid grid--1x2 feature">
+            <div class="feature__content">
+             <span class="icon-container">
+                 <svg class="icon icon--primary">
+                     <use xlink:href="images/sprite.svg#search"></use>
+                   </svg>
+             </span>        
+                <h3 class="feature__heading">Make them Think outside the books</h3>
+                <p>If you are rushing around looking after small children, it can be hard to find the time to sit down and read to them every day. Parents also might not feel comfortable reading aloud to their children no matter how much they would like to, through lack of confidence, or worries about their own literacy skills. Stories do not have to just live in books though. Traditions of storytelling go back through human existence a long time before books were even invented.</p>
+                <a class="link-arrow" href="#">Learn more</a>
+            </div>
+            <picture data-aos="fade-right">
+                <!-- <source type="image/webp" srcset="images/think.webp 1x, images/think@2x.webp 2x"> -->
+                <source type="image/png" srcset="images/think@1x.png 1x, images/think@2x.png 2x, images/think@3x.png 3x">
+                <img class="feature__image" src="images/think.png" alt="">
+            </picture>
+        </article>
+        <article class="grid grid--1x2 feature">
+            <div class="feature__content">
+             <span class="icon-container">
+                 <svg class="icon icon--primary">
+                     <use xlink:href="images/sprite.svg#settings"></use>
+                   </svg>
+             </span>        
+                <h3 class="feature__heading">Shape their world</h3>
+                <p>Most small children live their lives in quite a limited environment. Reading stories to children can show them far-flung places, extraordinary people and eye-opening situations to expand and enrich their world.</p>
+                <a class="link-arrow" href="#">Learn more</a>
+            </div>
+            <picture data-aos="fade-left">
+                <!-- <source type="image/webp" srcset="images/shapWorld.webp 1x, images/shapWorld@2x.webp 2x"> -->
+                <source type="image/png" srcset="images/shapWorld@1x.png 1x, images/shapWorld@2x.png 2x">
+                <img class="feature__image" src="images/shapWorld.png" alt="">
+            </picture>
+        </article>
+    </section>
+    <section class="block block--dark block--skewed-right block-showcase">
+        <header class="block__header">
+          <h2>Children book genres.</h2>
+        </header>
+        <div class="container grid grid--1x2">
+          <picture class="block-showcase__image">
+            <!-- <source
+              type="image/webp"
+              srcset="images/category.webp 1x, images/category@2x.webp 2x"
+            /> -->
+            <source
+              type="image/png"
+              srcset="images/category.png 1x, images/category@2x.png 2x"
+            />
+            <img src="images/category.png" alt="" />
+          </picture>
+          <ul class="list">
+            <li>
+              <div class="media">
+                <div class="media__image">
+                  <svg class="icon icon--primary">
+                    <!-- <use xlink:href="images/sprite.svg#snap"></use> -->
+                  </svg>
+                </div>
+                <div class="media__body">
+                  <h3 class="media__title">Fairytale</h3>
+                  <p>
+                    In a fairytale, the story always involves magic, a character who is evil, and a happy ending.
+                     This is the good versus evil type of story, with other-worldly, mysterious factors. 
+                     Very often (but not always) fairytales are set in a far-away place a long, long time ago. 
+                     A princess is  oftentimes a key character, but not always. 
+                    The one character that must be in the story is some sort of evil one, sometimes an evil witch.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="media">
+                <div class="media__image">
+                  <svg class="icon icon--primary">
+                    <!-- <use xlink:href="images/sprite.svg#clock"></use> -->
+                  </svg>
+                </div>
+                <div class="media__body">
+                  <h3 class="media__title">Fable</h3>
+                  <p>
+                    This is usually a short story with few characters, and very often the characters are anthropomorphic 
+                    animals who behave and speak like humans. 
+                    There is always an important social lesson to be learned in a fable.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="media">
+                <div class="media__image">
+                  <svg class="icon icon--primary">
+                    <!-- <use xlink:href="images/sprite.svg#wordpress"></use> -->
+                  </svg>
+                </div>
+                <div class="media__body">
+                  <h3 class="media__title">Myth</h3>
+                  <p>
+                    This is an origin story, one that explains how and why something today is the way it is. 
+                    Myths can explain things in nature, or how the world (or something on it) began, 
+                    or why people act the way they do. Myths often depict illogical, highly emotional behaviors in the story characters, 
+                    who are often very flawed and have a lesson to learn.
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="block">
+        <header class="block__header">
+            <h2>Stories</h2>
+            <p>How stories are goog for children?</p>
+        </header>
+        <div class="container">
+            <div class="card testimonial">
+                <div class="grid grid--1x2">
+                    <div class="testimonial__image">
+                        <img  src="images/baby.png" alt="smiling baby">
+                        <span class="icon-container">
+                         <svg class="icon icon--primary icon--small">
+                             <use xlink:href="images/sprite.svg#quotes"></use>
+                           </svg>
+                         </span>
+                    </div>
+                    <blockquote class="quote">
+                     <p class="quote__text">Stories help to develop a child imagination by introducing new ideas into their world ideas about fantastical worlds, other planets, different points in time and invented characters. It all encourage the children to realise that they can, and should, imagine anything they want.</p>
+                     <footer>
+                         <div class="media">
+                          <div class="media__image">
+                           <svg class="icon icon--primary quote__line">
+                               <use xlink:href="images/sprite.svg#line"></use>
+                             </svg>
+                          </div>
+                          <div class="media__body">
+                              <h3 class="media__title quote__author">The Writers Bureau.</h3>
+                              <p class="quote__company">Artical</p>
+                          </div>
+                             </div>
+                     </footer>
+                 </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="callout callout--primary">
+        <div class="grid grid--1x2">
+            <div class="callout__content">
+                <h2 class="callout__heading">R U ready!</h2>
+                <p>Comming soon ...</p>
+            </div>
+            <a class="btn btn--secondary" href="#">Get started</a>
+        </div>
+    </div>
+    <footer class="block block--dark footer">
+        <div class="container grid footer__sections">
+            <section class="collapsible collapsible--expanded footer__section">
+                <div class="collapsible__header">
+                  <h2 class="collapsible__heading footer__heading">Contact Us</h2>
+                  <svg class="icon icon--white collapsible__chevron">
+                    <use xlink:href="images/sprite.svg#chevron"></use>
+                  </svg>
+                </div>
+                <div class="collapsible__content">
+                 <ul class="list">
+                     <li><a href="#">Facebook</a></li>
+                     <li><a href="#">Instagram</a></li>
+                     <li><a href="#">Linkedin</a></li>
+                     <li><a href="#">Email</a></li>
+                 </ul>
+                </div>
+            </section>
+            <section class="collapsible footer__section">
+                <div class="collapsible__header">
+                  <h2 class="collapsible__heading footer__heading">About the website</h2>
+                  <svg class="icon icon--white collapsible__chevron">
+                    <use xlink:href="images/sprite.svg#chevron"></use>
+                  </svg>
+                </div>
+                <div class="collapsible__content">
+                  This website is a trailer of a bigger one comming soon.
+                </div>
+            </section>
+            <section class="collapsible footer__section">
+                <div class="collapsible__header">
+                  <h2 class="collapsible__heading footer__heading">About the developer</h2>
+                  <svg class="icon icon--white collapsible__chevron">
+                    <use xlink:href="images/sprite.svg#chevron"></use>
+                  </svg>
+                </div>
+                <div class="collapsible__content">
+                  If you have any inqueries about this website we would be so pleased to hear it 
+                  <a href="mailto:noortaha502@gmail.com" target="blank" class="important">Email</a>.
+                </div>
+            </section>
+            <div class="footer__brand">
+                <img src="images/fairytale32.png" alt="">
+                <div class="footer__copyright">Children stories from diffrent cultures.</div>
+            </div>
+        </div>
+        
+       </footer>
    <script src="js/main.js"></script>
+   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
